@@ -1,19 +1,17 @@
- class Employee {
-    int empid;
-    String name;
+class Employee {
+    public int empid;
+    public String name;
+    public int age;
 
-    Employee (int id,String nm){
-        this.empid=id;
-        this.name=nm;
+    Employee(int id,String nm,int a){
+        empid=id;
+        name=nm;
+        age=a;
+
 
     }
 
-    // public String toString() {
-    //     return "Employee{" +
-    //             "id=" + empid +
-    //             ", name='" + name + '\'' +
-    //             '}';
-    // }
-
-    
+    public String toString(){
+        return empid+" "+name+"  "+age;
+    }
 }
